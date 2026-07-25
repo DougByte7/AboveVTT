@@ -1,0 +1,13 @@
+node_modules
+safari/
+scenedata/
+assets/
+images/
+audio/
+*.min.js
+*.min.css
+color-picker.js
+jquery.contextMenu.js
+jquery.csv.js
+jquery.ui.touch-punch.js
+onedrive/onedrivemsal.js

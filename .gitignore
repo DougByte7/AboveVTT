@@ -3,6 +3,7 @@
 .history
 .idea
 Makefile
+node_modules
 safari/AboveVTT.xcodeproj/project.xcworkspace/xcuserdata
 safari/AboveVTT.xcodeproj/xcuserdata
 safari/build

@@ -1,0 +1,26 @@
+name: lint
+
+# Phase 0 of docs/MODERNIZATION.md: passive tooling only. These checks are
+# intentionally non-blocking (continue-on-error) until lint/format are
+# stable enough to become a real gate — see Fase 6 in that doc.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: ESLint (warn-only)
+        continue-on-error: true
+        run: npm run lint
+      - name: Prettier (warn-only)
+        continue-on-error: true
+        run: npm run format:check
