@@ -12,7 +12,7 @@ const externalDependencies = [
     "purify.min.js",
     "rpg-dice-roller.bundle.min.js",
     'jquery-ui.min.js',
-    'jquery-3.6.0.min.js',
+    'jquery-3.7.1.min.js',
     'jquery.csv.js'
 ]
 

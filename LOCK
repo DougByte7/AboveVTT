@@ -1,8 +1,8 @@
 # This file was generated, to update it run `node lock.js`
 2c452faf6acd847d94d06ff2a303eae1c60fead1493faa83addd6c7c0ff9640c	color-picker.js
 dac68f8e452bde0e1f12742d3e9742a412d29d877d2fea82e525d0506410bfc1	mousetrap.1.6.5.min.js
-bbbdbd492fab64994f25b5a03deb97ff9ef311832ba666f711d88cba0e4860d4	purify.min.js
+c45ba939765574f96cbf35ee9b6d89f73756a17921814425e74b82f7c54603ce	purify.min.js
 771006a96fc34eb7ff290d16c55e6a15d518b38ed0dc52f55b046f5261b2c40d	rpg-dice-roller.bundle.min.js
-793cb14b4ae48e92c4a35eae5d34b4b95092e3cd7995ce342b6895a560ef7526	jquery-ui.min.js
-ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e	jquery-3.6.0.min.js
+b30d2234d5e63896d085816e0bd385da43a50f929029ed72e657c19f80bd4a38	jquery-ui.min.js
+fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a	jquery-3.7.1.min.js
 9b869715ffbbd7b57e2b615ae892c769dce86985a1cdb12cc922a8843fb83e72	jquery.csv.js

@@ -53,7 +53,7 @@
 		20BD39362D7619E300E6DADC /* ScenesHandler.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EA2D7619E300E6DADC /* ScenesHandler.js */; };
 		20BD39372D7619E300E6DADC /* images in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EB2D7619E300E6DADC /* images */; };
 		20BD39382D7619E300E6DADC /* Startup.mjs in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EC2D7619E300E6DADC /* Startup.mjs */; };
-		20BD39392D7619E300E6DADC /* jquery-3.6.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38ED2D7619E300E6DADC /* jquery-3.6.0.min.js */; };
+		20BD39392D7619E300E6DADC /* jquery-3.7.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38ED2D7619E300E6DADC /* jquery-3.7.1.min.js */; };
 		20BD393A2D7619E300E6DADC /* ChatObserver.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EE2D7619E300E6DADC /* ChatObserver.js */; };
 		20BD393C2D7619E300E6DADC /* onedrive in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F02D7619E300E6DADC /* onedrive */; };
 		20BD393E2D7619E300E6DADC /* PrivacyPolicy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F22D7619E300E6DADC /* PrivacyPolicy.txt */; };
@@ -62,7 +62,7 @@
 		20BD39422D7619E300E6DADC /* jquery.ui.touch-punch.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F62D7619E300E6DADC /* jquery.ui.touch-punch.js */; };
 		20BD39432D7619E300E6DADC /* mousetrap.1.6.5.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F72D7619E300E6DADC /* mousetrap.1.6.5.min.js */; };
 		20BD39442D7619E300E6DADC /* CharactersPage.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F82D7619E300E6DADC /* CharactersPage.js */; };
-		20BD39452D7619E300E6DADC /* spectrum-2.0.8.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F92D7619E300E6DADC /* spectrum-2.0.8.min.css */; };
+		20BD39452D7619E300E6DADC /* spectrum-2.0.10.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F92D7619E300E6DADC /* spectrum-2.0.10.min.css */; };
 		20BD39472D7619E300E6DADC /* MessageBroker.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38FB2D7619E300E6DADC /* MessageBroker.js */; };
 		20BD39482D7619E300E6DADC /* scenedata in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38FC2D7619E300E6DADC /* scenedata */; };
 		20BD39492D7619E300E6DADC /* Token.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38FD2D7619E300E6DADC /* Token.js */; };
@@ -77,7 +77,7 @@
 		20BD39522D7619E300E6DADC /* KeypressHandler.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39062D7619E300E6DADC /* KeypressHandler.js */; };
 		20BD39532D7619E300E6DADC /* AboveApi.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39072D7619E300E6DADC /* AboveApi.js */; };
 		20BD39542D7619E300E6DADC /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39082D7619E300E6DADC /* audio */; };
-		20BD39552D7619E300E6DADC /* spectrum-2.0.8.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39092D7619E300E6DADC /* spectrum-2.0.8.min.js */; };
+		20BD39552D7619E300E6DADC /* spectrum-2.0.10.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39092D7619E300E6DADC /* spectrum-2.0.10.min.js */; };
 		20BD39562D7619E300E6DADC /* MonsterStatBlock.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD390A2D7619E300E6DADC /* MonsterStatBlock.js */; };
 		20BD39572D7619E300E6DADC /* PlayerPanel.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD390B2D7619E300E6DADC /* PlayerPanel.js */; };
 		20BD39592D7619E300E6DADC /* jquery.csv.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD390D2D7619E300E6DADC /* jquery.csv.js */; };
@@ -122,7 +122,7 @@
 		20BD39822D7619E300E6DADC /* ScenesHandler.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EA2D7619E300E6DADC /* ScenesHandler.js */; };
 		20BD39832D7619E300E6DADC /* images in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EB2D7619E300E6DADC /* images */; };
 		20BD39842D7619E300E6DADC /* Startup.mjs in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EC2D7619E300E6DADC /* Startup.mjs */; };
-		20BD39852D7619E300E6DADC /* jquery-3.6.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38ED2D7619E300E6DADC /* jquery-3.6.0.min.js */; };
+		20BD39852D7619E300E6DADC /* jquery-3.7.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38ED2D7619E300E6DADC /* jquery-3.7.1.min.js */; };
 		20BD39862D7619E300E6DADC /* ChatObserver.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38EE2D7619E300E6DADC /* ChatObserver.js */; };
 		20BD39882D7619E300E6DADC /* onedrive in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F02D7619E300E6DADC /* onedrive */; };
 		20BD398A2D7619E300E6DADC /* PrivacyPolicy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F22D7619E300E6DADC /* PrivacyPolicy.txt */; };
@@ -131,7 +131,7 @@
 		20BD398E2D7619E300E6DADC /* jquery.ui.touch-punch.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F62D7619E300E6DADC /* jquery.ui.touch-punch.js */; };
 		20BD398F2D7619E300E6DADC /* mousetrap.1.6.5.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F72D7619E300E6DADC /* mousetrap.1.6.5.min.js */; };
 		20BD39902D7619E300E6DADC /* CharactersPage.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F82D7619E300E6DADC /* CharactersPage.js */; };
-		20BD39912D7619E300E6DADC /* spectrum-2.0.8.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F92D7619E300E6DADC /* spectrum-2.0.8.min.css */; };
+		20BD39912D7619E300E6DADC /* spectrum-2.0.10.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38F92D7619E300E6DADC /* spectrum-2.0.10.min.css */; };
 		20BD39932D7619E300E6DADC /* MessageBroker.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38FB2D7619E300E6DADC /* MessageBroker.js */; };
 		20BD39942D7619E300E6DADC /* scenedata in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38FC2D7619E300E6DADC /* scenedata */; };
 		20BD39952D7619E300E6DADC /* Token.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD38FD2D7619E300E6DADC /* Token.js */; };
@@ -146,7 +146,7 @@
 		20BD399E2D7619E300E6DADC /* KeypressHandler.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39062D7619E300E6DADC /* KeypressHandler.js */; };
 		20BD399F2D7619E300E6DADC /* AboveApi.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39072D7619E300E6DADC /* AboveApi.js */; };
 		20BD39A02D7619E300E6DADC /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39082D7619E300E6DADC /* audio */; };
-		20BD39A12D7619E300E6DADC /* spectrum-2.0.8.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39092D7619E300E6DADC /* spectrum-2.0.8.min.js */; };
+		20BD39A12D7619E300E6DADC /* spectrum-2.0.10.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD39092D7619E300E6DADC /* spectrum-2.0.10.min.js */; };
 		20BD39A22D7619E300E6DADC /* MonsterStatBlock.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD390A2D7619E300E6DADC /* MonsterStatBlock.js */; };
 		20BD39A32D7619E300E6DADC /* PlayerPanel.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD390B2D7619E300E6DADC /* PlayerPanel.js */; };
 		20BD39A52D7619E300E6DADC /* jquery.csv.js in Resources */ = {isa = PBXBuildFile; fileRef = 20BD390D2D7619E300E6DADC /* jquery.csv.js */; };
@@ -268,7 +268,7 @@
 		20BD38EA2D7619E300E6DADC /* ScenesHandler.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = ScenesHandler.js; path = ../../ScenesHandler.js; sourceTree = "<group>"; };
 		20BD38EB2D7619E300E6DADC /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../images; sourceTree = "<group>"; };
 		20BD38EC2D7619E300E6DADC /* Startup.mjs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = Startup.mjs; path = ../../Startup.mjs; sourceTree = "<group>"; };
-		20BD38ED2D7619E300E6DADC /* jquery-3.6.0.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "jquery-3.6.0.min.js"; path = "../../jquery-3.6.0.min.js"; sourceTree = "<group>"; };
+		20BD38ED2D7619E300E6DADC /* jquery-3.7.1.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "jquery-3.7.1.min.js"; path = "../../jquery-3.7.1.min.js"; sourceTree = "<group>"; };
 		20BD38EE2D7619E300E6DADC /* ChatObserver.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = ChatObserver.js; path = ../../ChatObserver.js; sourceTree = "<group>"; };
 		20BD38F02D7619E300E6DADC /* onedrive */ = {isa = PBXFileReference; lastKnownFileType = folder; name = onedrive; path = ../../onedrive; sourceTree = "<group>"; };
 		20BD38F22D7619E300E6DADC /* PrivacyPolicy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = PrivacyPolicy.txt; path = ../../PrivacyPolicy.txt; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 		20BD38F62D7619E300E6DADC /* jquery.ui.touch-punch.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "jquery.ui.touch-punch.js"; path = "../../jquery.ui.touch-punch.js"; sourceTree = "<group>"; };
 		20BD38F72D7619E300E6DADC /* mousetrap.1.6.5.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = mousetrap.1.6.5.min.js; path = ../../mousetrap.1.6.5.min.js; sourceTree = "<group>"; };
 		20BD38F82D7619E300E6DADC /* CharactersPage.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = CharactersPage.js; path = ../../CharactersPage.js; sourceTree = "<group>"; };
-		20BD38F92D7619E300E6DADC /* spectrum-2.0.8.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "spectrum-2.0.8.min.css"; path = "../../spectrum-2.0.8.min.css"; sourceTree = "<group>"; };
+		20BD38F92D7619E300E6DADC /* spectrum-2.0.10.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "spectrum-2.0.10.min.css"; path = "../../spectrum-2.0.10.min.css"; sourceTree = "<group>"; };
 		20BD38FB2D7619E300E6DADC /* MessageBroker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = MessageBroker.js; path = ../../MessageBroker.js; sourceTree = "<group>"; };
 		20BD38FC2D7619E300E6DADC /* scenedata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scenedata; path = ../../scenedata; sourceTree = "<group>"; };
 		20BD38FD2D7619E300E6DADC /* Token.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = Token.js; path = ../../Token.js; sourceTree = "<group>"; };
@@ -292,7 +292,7 @@
 		20BD39062D7619E300E6DADC /* KeypressHandler.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = KeypressHandler.js; path = ../../KeypressHandler.js; sourceTree = "<group>"; };
 		20BD39072D7619E300E6DADC /* AboveApi.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = AboveApi.js; path = ../../AboveApi.js; sourceTree = "<group>"; };
 		20BD39082D7619E300E6DADC /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = audio; path = ../../audio; sourceTree = "<group>"; };
-		20BD39092D7619E300E6DADC /* spectrum-2.0.8.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "spectrum-2.0.8.min.js"; path = "../../spectrum-2.0.8.min.js"; sourceTree = "<group>"; };
+		20BD39092D7619E300E6DADC /* spectrum-2.0.10.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "spectrum-2.0.10.min.js"; path = "../../spectrum-2.0.10.min.js"; sourceTree = "<group>"; };
 		20BD390A2D7619E300E6DADC /* MonsterStatBlock.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = MonsterStatBlock.js; path = ../../MonsterStatBlock.js; sourceTree = "<group>"; };
 		20BD390B2D7619E300E6DADC /* PlayerPanel.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = PlayerPanel.js; path = ../../PlayerPanel.js; sourceTree = "<group>"; };
 		20BD390D2D7619E300E6DADC /* jquery.csv.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = jquery.csv.js; path = ../../jquery.csv.js; sourceTree = "<group>"; };
@@ -474,7 +474,7 @@
 				20BD38EA2D7619E300E6DADC /* ScenesHandler.js */,
 				20BD38EB2D7619E300E6DADC /* images */,
 				20BD38EC2D7619E300E6DADC /* Startup.mjs */,
-				20BD38ED2D7619E300E6DADC /* jquery-3.6.0.min.js */,
+				20BD38ED2D7619E300E6DADC /* jquery-3.7.1.min.js */,
 				20BD38EE2D7619E300E6DADC /* ChatObserver.js */,
 				20BD38F02D7619E300E6DADC /* onedrive */,
 				20BD38F22D7619E300E6DADC /* PrivacyPolicy.txt */,
@@ -483,7 +483,7 @@
 				20BD38F62D7619E300E6DADC /* jquery.ui.touch-punch.js */,
 				20BD38F72D7619E300E6DADC /* mousetrap.1.6.5.min.js */,
 				20BD38F82D7619E300E6DADC /* CharactersPage.js */,
-				20BD38F92D7619E300E6DADC /* spectrum-2.0.8.min.css */,
+				20BD38F92D7619E300E6DADC /* spectrum-2.0.10.min.css */,
 				20BD38FB2D7619E300E6DADC /* MessageBroker.js */,
 				20BD38FC2D7619E300E6DADC /* scenedata */,
 				20BD38FD2D7619E300E6DADC /* Token.js */,
@@ -498,7 +498,7 @@
 				20BD39062D7619E300E6DADC /* KeypressHandler.js */,
 				20BD39072D7619E300E6DADC /* AboveApi.js */,
 				20BD39082D7619E300E6DADC /* audio */,
-				20BD39092D7619E300E6DADC /* spectrum-2.0.8.min.js */,
+				20BD39092D7619E300E6DADC /* spectrum-2.0.10.min.js */,
 				20BD390A2D7619E300E6DADC /* MonsterStatBlock.js */,
 				20BD390B2D7619E300E6DADC /* PlayerPanel.js */,
 				20BD390D2D7619E300E6DADC /* jquery.csv.js */,
@@ -707,7 +707,7 @@
 				20BD39B12D7619E300E6DADC /* Settings.js in Resources */,
 				20BD39982D7619E300E6DADC /* rpg-dice-roller.bundle.min.js in Resources */,
 				20BD396D2D7619E300E6DADC /* DDBApi.js in Resources */,
-				20BD39A12D7619E300E6DADC /* spectrum-2.0.8.min.js in Resources */,
+				20BD39A12D7619E300E6DADC /* spectrum-2.0.10.min.js in Resources */,
 				20BD398A2D7619E300E6DADC /* PrivacyPolicy.txt in Resources */,
 				20BD399D2D7619E300E6DADC /* TokenMenu.js in Resources */,
 				20BD39B22D7619E300E6DADC /* Text.js in Resources */,
@@ -735,9 +735,9 @@
 				20BD396E2D7619E300E6DADC /* purify.min.js in Resources */,
 				20BD397E2D7619E300E6DADC /* peerjs.min.js in Resources */,
 				20BD39932D7619E300E6DADC /* MessageBroker.js in Resources */,
-				20BD39912D7619E300E6DADC /* spectrum-2.0.8.min.css in Resources */,
+				20BD39912D7619E300E6DADC /* spectrum-2.0.10.min.css in Resources */,
 				20BD399C2D7619E300E6DADC /* Load.js in Resources */,
-				20BD39852D7619E300E6DADC /* jquery-3.6.0.min.js in Resources */,
+				20BD39852D7619E300E6DADC /* jquery-3.7.1.min.js in Resources */,
 				20BD39972D7619E300E6DADC /* README.md in Resources */,
 				20BD399F2D7619E300E6DADC /* AboveApi.js in Resources */,
 				20BD39862D7619E300E6DADC /* ChatObserver.js in Resources */,
@@ -787,7 +787,7 @@
 				20BD39652D7619E300E6DADC /* Settings.js in Resources */,
 				20BD394C2D7619E300E6DADC /* rpg-dice-roller.bundle.min.js in Resources */,
 				20BD39212D7619E300E6DADC /* DDBApi.js in Resources */,
-				20BD39552D7619E300E6DADC /* spectrum-2.0.8.min.js in Resources */,
+				20BD39552D7619E300E6DADC /* spectrum-2.0.10.min.js in Resources */,
 				20BD393E2D7619E300E6DADC /* PrivacyPolicy.txt in Resources */,
 				20BD39512D7619E300E6DADC /* TokenMenu.js in Resources */,
 				20BD39662D7619E300E6DADC /* Text.js in Resources */,
@@ -815,9 +815,9 @@
 				20BD39222D7619E300E6DADC /* purify.min.js in Resources */,
 				20BD39322D7619E300E6DADC /* peerjs.min.js in Resources */,
 				20BD39472D7619E300E6DADC /* MessageBroker.js in Resources */,
-				20BD39452D7619E300E6DADC /* spectrum-2.0.8.min.css in Resources */,
+				20BD39452D7619E300E6DADC /* spectrum-2.0.10.min.css in Resources */,
 				20BD39502D7619E300E6DADC /* Load.js in Resources */,
-				20BD39392D7619E300E6DADC /* jquery-3.6.0.min.js in Resources */,
+				20BD39392D7619E300E6DADC /* jquery-3.7.1.min.js in Resources */,
 				20BD394B2D7619E300E6DADC /* README.md in Resources */,
 				20BD39532D7619E300E6DADC /* AboveApi.js in Resources */,
 				20BD393A2D7619E300E6DADC /* ChatObserver.js in Resources */,

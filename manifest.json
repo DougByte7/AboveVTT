@@ -31,7 +31,7 @@
 	"web_accessible_resources": [
 		{
 			"resources": [
-			"jquery-3.6.0.min.js",
+			"jquery-3.7.1.min.js",
 			"assets/*",
 			"audio/*",
 			"images/*",
@@ -51,8 +51,8 @@
 			"jquery.contextMenu.js",
 			"jquery.magnific-popup.min.js",
 			"purify.min.js",
-			"spectrum-2.0.8.min.js",
-			"spectrum-2.0.8.min.css",
+			"spectrum-2.0.10.min.js",
+			"spectrum-2.0.10.min.css",
 			"peerjs.min.js",
 			"fuse.min.js",
 			"environment.js",

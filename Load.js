@@ -55,13 +55,13 @@
     
     const avttScripts = [
         // External Dependencies
-        "jquery-3.6.0.min.js",
+        "jquery-3.7.1.min.js",
         "jquery-ui.min.js",
         "jquery.csv.js",
         "jquery.ui.touch-punch.js",
         "jquery.contextMenu.js",
         "jquery.magnific-popup.min.js",
-        "spectrum-2.0.8.min.js",
+        "spectrum-2.0.10.min.js",
         "purify.min.js",
         "rpg-dice-roller.bundle.min.js",
         "color-picker.js",
@@ -115,7 +115,7 @@
     const avttCharacterScripts = [
         "Load.js", //load Loader on character sheets to support DBB Character Overhaul Extension
         // External Dependencies
-        "jquery-3.6.0.min.js",
+        "jquery-3.7.1.min.js",
         "jquery.contextMenu.js",	
         "purify.min.js",	
         "ajaxQueue/ajaxQueueIndex.mjs",
@@ -136,7 +136,7 @@
         "jquery.ui.theme.min.css",
         "jquery.contextMenu.css",
         "color-picker.min.css",
-        "spectrum-2.0.8.min.css",
+        "spectrum-2.0.10.min.css",
         "magnific-popup.css",
         "DiceContextMenu/DiceContextMenu.css"
     ];
@@ -210,7 +210,7 @@
                   "MonsterDice.js",
                   "CampaignPage.mjs"
               ] : pgType === "campaign" ? [    
-                  "jquery-3.6.0.min.js",  
+                  "jquery-3.7.1.min.js",  
                   "environment.js",
                   "CoreFunctions.js", 		
                   "DDBApi.js",

@@ -81,6 +81,31 @@ Goal: quality tooling in the repo with zero behavior change.
   campaign, roll dice, move a token, fog of war) before merge, using the beta
   channel to validate with real users before the production release.
 
+**Status (2026-07-24): files updated and manually verified locally** (campaign
+load, dice rolling, token movement, fog of war, color pickers, GitHub-issue
+fuzzy search). Still recommend a beta-channel pass before production, per the
+plan's principle 2.
+
+| Lib | Before | After | Notes |
+|---|---|---|---|
+| DOMPurify | 2.3.6 | 3.4.12 | `purify.min.js`, filename unchanged. API used in this repo (`sanitize(str, {ALLOWED_TAGS, ADD_ATTR})`) is unchanged across the major bump. |
+| Fuse.js | 6.6.2 | 7.2.0 | `fuse.min.js`. 7.3.0+ dropped the UMD/global browser build required by the current `<script>`-tag loading (`Load.js`) — 7.2.0 is the newest version that still exposes `window.Fuse`. Revisit once Phase 2's bundler lands and an ESM build (`fuse.mjs`) becomes usable. |
+| jQuery | 3.6.0 | 3.7.1 | File renamed `jquery-3.6.0.min.js` → `jquery-3.7.1.min.js`; all references updated (`Load.js`, `manifest.json`, `safari/AboveVTT.xcodeproj/project.pbxproj`). Latest is 4.0.0, but that's a breaking major version — stayed on the last 3.x release to keep this a behavior-preserving update. |
+| jQuery UI (JS) | 1.13.1 | 1.13.3 | `jquery-ui.min.js`, filename unchanged, same bundled widget set. Includes upstream security fixes from 1.13.2. |
+| jQuery UI (CSS) | 1.13.1 | *unchanged* | `jquery-ui.min.css` / `jquery.ui.theme.min.css` are a custom ThemeRoller build (see the URL embedded in the file header), not the stock npm dist — regenerating them risks a visual regression that can't be checked without a browser. Left as-is; revisit if/when someone rebuilds the theme intentionally. |
+| Spectrum | 2.0.8 | 2.0.10 | File renamed `spectrum-2.0.8.min.{js,css}` → `spectrum-2.0.10.min.{js,css}`; all references updated. Same `spectrum-colorpicker2` fork lineage (verified via matching source header), plugin API (`.spectrum({...})`, `"get"`, `"set"`) unchanged. |
+| Mousetrap | 1.6.5 | *unchanged* | Deferred per the rule above — nobody is currently touching that area. |
+
+All downloads were verified against the jsDelivr-published SRI hash for the
+exact npm package version before being vendored.
+
+When a vendored filename encodes a version (e.g. `jquery-X.Y.Z.min.js`,
+`spectrum-X.Y.Z.min.js`), renaming it touches more places than `Load.js` and
+`manifest.json`: also check `lock.js` / `LOCK` (dependency hash list),
+`.gitattributes`, `LibrarySources.txt`, `ajaxQueue/jquery.module.js` (ES
+module `import`), and `safari/AboveVTT.xcodeproj/project.pbxproj`. A repo-wide
+grep for the old filename is the reliable way to catch all of them.
+
 ### Phase 2 — Parallel optional build
 
 - Introduce a lightweight bundler (esbuild: zero-config, fast, doesn't require

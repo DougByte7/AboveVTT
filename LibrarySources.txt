@@ -1,7 +1,6 @@
 # purify.min.js (DOMPURIFY)
 
-wget https://github.com/cure53/DOMPurify/archive/refs/tags/2.3.6.tar.gz
-tar zxf 2.3.3.tar.gz
+wget https://cdn.jsdelivr.net/npm/dompurify@3.4.12/dist/purify.min.js
 
 
 # color-picker.js
@@ -27,13 +26,24 @@ sha1sum jquery.csv.js
 
 # move files to correct locations
 
-# jquery 3.6.0
-https://code.jquery.com/jquery-3.6.0.min.js
+# jquery 3.7.1
+https://code.jquery.com/jquery-3.7.1.min.js
+# (staying on the 3.x line intentionally: jQuery 4.0.0 is a breaking major version)
 
-# jquery ui  1.31.1
-https://jqueryui.com/resources/download/jquery-ui-1.13.1.zip
+# jquery ui (JS) 1.13.3
+https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.13.3/jquery-ui.min.js
 cp jquery-ui.min.js [root]
-cp jquery-ui.min.css [root]
+# jquery-ui.min.css / jquery.ui.theme.min.css are a custom ThemeRoller build
+# (see the URL in their own file header) — NOT the stock npm/jqueryui.com dist,
+# do not overwrite them from a generic download without visually re-testing.
 
-# Spectrum Color Picker 2.0.8 (https://seballot.github.io/spectrum/)
-# Download, unzip, and rename to include version number from here https://github.com/seballot/spectrum/tags
+# fuse.min.js (Fuse.js) 7.2.0
+https://cdn.jsdelivr.net/npm/fuse.js@7.2.0/dist/fuse.min.js
+# capped at 7.2.0 intentionally: 7.3.0+ dropped the UMD/global browser build
+# that Load.js's <script>-tag loading depends on. Revisit once there's a
+# bundler (Phase 2) that can consume the ESM build (fuse.mjs) instead.
+
+# Spectrum Color Picker 2.0.10 (https://github.com/seballot/spectrum, npm: spectrum-colorpicker2)
+https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.10/dist/spectrum.min.js
+https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.10/dist/spectrum.min.css
+# rename both to spectrum-2.0.10.min.{js,css}
