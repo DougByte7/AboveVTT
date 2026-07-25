@@ -24,3 +24,6 @@ jobs:
       - name: Prettier (warn-only)
         continue-on-error: true
         run: npm run format:check
+      - name: esbuild parallel bundle (warn-only)
+        continue-on-error: true
+        run: npm run build

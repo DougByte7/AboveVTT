@@ -41,10 +41,14 @@ See [MODERNIZATION.md](MODERNIZATION.md) for the plan to add tooling
   `versionSuffix: "-local"` and `baseUrl: "https://services.abovevtt.net"`.
   It's normally left alone for local dev; CI overwrites it during release
   builds only (see `.github/workflows/release-build.yml`).
-- There's no bundler: editing a `.js` file takes effect on next extension
-  reload. `.mjs` files (`Startup.mjs`, `CampaignPage.mjs`,
-  `ajaxQueue/ajaxQueueIndex.mjs`) are real ES modules; everything else is a
-  global script, and load order in `Load.js` matters.
+- There's no bundler in the production path: editing a `.js` file takes
+  effect on next extension reload. `.mjs` files (`Startup.mjs`,
+  `CampaignPage.mjs`, `ajaxQueue/ajaxQueueIndex.mjs`) are real ES modules;
+  everything else is a global script, and load order in `Load.js` matters.
+  `npm run build` generates an optional esbuild bundle for manual testing
+  (see [`Load.bundled.js`](../Load.bundled.js) and Phase 2 in
+  [MODERNIZATION.md](MODERNIZATION.md)) — `Load.js` and `manifest.json` are
+  unaffected unless you opt in.
 - Third-party libraries (jQuery, jQuery UI, DOMPurify, Fuse.js, Mousetrap,
   Spectrum, PeerJS, rpg-dice-roller) are vendored directly in the repo, not
   installed via npm.

@@ -104,7 +104,9 @@
 			"iframe.html",
 			"avttS3Upload.js",
 			"loadFrame.js",
-			"Load.js"	
+			"Load.js",
+			"Load.bundled.js",
+			"dist/*"
 			],
 			"matches": [ "*://*.dndbeyond.com/*" ]	
 		}

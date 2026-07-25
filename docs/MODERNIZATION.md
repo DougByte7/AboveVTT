@@ -25,14 +25,14 @@ is a sequence of small, independent PRs that can be tested in isolation.
   Modules. That's the thread to pull, not a migration from scratch.
 - **Manually vendored third-party dependencies** (pasted into the repo, no npm):
 
-  | Lib | Version in repo | Status |
-  |---|---|---|
-  | jQuery | 3.6.0 (2021) | Slightly behind |
-  | jQuery UI | 1.13.1 | Slightly behind |
-  | DOMPurify | 2.3.6 (2021) | Behind on security — used for HTML sanitization |
-  | Fuse.js | 6.6.2 | Behind (current is 7.x) |
-  | Mousetrap | 1.6.5 | Abandoned by the author since ~2018 |
-  | Spectrum, PeerJS, rpg-dice-roller | various | No defined update process |
+  | Lib                               | Version in repo | Status                                          |
+  | --------------------------------- | --------------- | ----------------------------------------------- |
+  | jQuery                            | 3.6.0 (2021)    | Slightly behind                                 |
+  | jQuery UI                         | 1.13.1          | Slightly behind                                 |
+  | DOMPurify                         | 2.3.6 (2021)    | Behind on security — used for HTML sanitization |
+  | Fuse.js                           | 6.6.2           | Behind (current is 7.x)                         |
+  | Mousetrap                         | 1.6.5           | Abandoned by the author since ~2018             |
+  | Spectrum, PeerJS, rpg-dice-roller | various         | No defined update process                       |
 
 - **CI**: today it only packages releases (MV3 zip + Safari build via Xcode). It
   doesn't run lint, tests, or typechecking.
@@ -86,15 +86,15 @@ load, dice rolling, token movement, fog of war, color pickers, GitHub-issue
 fuzzy search). Still recommend a beta-channel pass before production, per the
 plan's principle 2.
 
-| Lib | Before | After | Notes |
-|---|---|---|---|
-| DOMPurify | 2.3.6 | 3.4.12 | `purify.min.js`, filename unchanged. API used in this repo (`sanitize(str, {ALLOWED_TAGS, ADD_ATTR})`) is unchanged across the major bump. |
-| Fuse.js | 6.6.2 | 7.2.0 | `fuse.min.js`. 7.3.0+ dropped the UMD/global browser build required by the current `<script>`-tag loading (`Load.js`) — 7.2.0 is the newest version that still exposes `window.Fuse`. Revisit once Phase 2's bundler lands and an ESM build (`fuse.mjs`) becomes usable. |
-| jQuery | 3.6.0 | 3.7.1 | File renamed `jquery-3.6.0.min.js` → `jquery-3.7.1.min.js`; all references updated (`Load.js`, `manifest.json`, `safari/AboveVTT.xcodeproj/project.pbxproj`). Latest is 4.0.0, but that's a breaking major version — stayed on the last 3.x release to keep this a behavior-preserving update. |
-| jQuery UI (JS) | 1.13.1 | 1.13.3 | `jquery-ui.min.js`, filename unchanged, same bundled widget set. Includes upstream security fixes from 1.13.2. |
-| jQuery UI (CSS) | 1.13.1 | *unchanged* | `jquery-ui.min.css` / `jquery.ui.theme.min.css` are a custom ThemeRoller build (see the URL embedded in the file header), not the stock npm dist — regenerating them risks a visual regression that can't be checked without a browser. Left as-is; revisit if/when someone rebuilds the theme intentionally. |
-| Spectrum | 2.0.8 | 2.0.10 | File renamed `spectrum-2.0.8.min.{js,css}` → `spectrum-2.0.10.min.{js,css}`; all references updated. Same `spectrum-colorpicker2` fork lineage (verified via matching source header), plugin API (`.spectrum({...})`, `"get"`, `"set"`) unchanged. |
-| Mousetrap | 1.6.5 | *unchanged* | Deferred per the rule above — nobody is currently touching that area. |
+| Lib             | Before | After       | Notes                                                                                                                                                                                                                                                                                                         |
+| --------------- | ------ | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DOMPurify       | 2.3.6  | 3.4.12      | `purify.min.js`, filename unchanged. API used in this repo (`sanitize(str, {ALLOWED_TAGS, ADD_ATTR})`) is unchanged across the major bump.                                                                                                                                                                    |
+| Fuse.js         | 6.6.2  | 7.2.0       | `fuse.min.js`. 7.3.0+ dropped the UMD/global browser build required by the current `<script>`-tag loading (`Load.js`) — 7.2.0 is the newest version that still exposes `window.Fuse`. Revisit once Phase 2's bundler lands and an ESM build (`fuse.mjs`) becomes usable.                                      |
+| jQuery          | 3.6.0  | 3.7.1       | File renamed `jquery-3.6.0.min.js` → `jquery-3.7.1.min.js`; all references updated (`Load.js`, `manifest.json`, `safari/AboveVTT.xcodeproj/project.pbxproj`). Latest is 4.0.0, but that's a breaking major version — stayed on the last 3.x release to keep this a behavior-preserving update.                |
+| jQuery UI (JS)  | 1.13.1 | 1.13.3      | `jquery-ui.min.js`, filename unchanged, same bundled widget set. Includes upstream security fixes from 1.13.2.                                                                                                                                                                                                |
+| jQuery UI (CSS) | 1.13.1 | _unchanged_ | `jquery-ui.min.css` / `jquery.ui.theme.min.css` are a custom ThemeRoller build (see the URL embedded in the file header), not the stock npm dist — regenerating them risks a visual regression that can't be checked without a browser. Left as-is; revisit if/when someone rebuilds the theme intentionally. |
+| Spectrum        | 2.0.8  | 2.0.10      | File renamed `spectrum-2.0.8.min.{js,css}` → `spectrum-2.0.10.min.{js,css}`; all references updated. Same `spectrum-colorpicker2` fork lineage (verified via matching source header), plugin API (`.spectrum({...})`, `"get"`, `"set"`) unchanged.                                                            |
+| Mousetrap       | 1.6.5  | _unchanged_ | Deferred per the rule above — nobody is currently touching that area.                                                                                                                                                                                                                                         |
 
 All downloads were verified against the jsDelivr-published SRI hash for the
 exact npm package version before being vendored.
@@ -114,6 +114,38 @@ grep for the old filename is the reliable way to catch all of them.
   production path.
 - Serves as the foundation for Phase 3 without breaking the global load order
   the code currently depends on.
+
+**Status (2026-07-24): build infrastructure landed and manually verified, not wired into production.**
+
+- `npm run build` (via [`scripts/build.mjs`](../scripts/build.mjs)) uses
+  esbuild to transform each file in `Load.js`'s `avttScripts` /
+  `avttCharacterScripts` lists individually (no module wrapping — see the
+  comment at the top of that file for why) and concatenates them in the same
+  order into `dist/vtt.bundle.js` and `dist/character.bundle.js`. This
+  preserves today's global-scope semantics (top-level `var`/`function`
+  becoming `window` properties) exactly, which real esbuild bundling
+  (`bundle: true`, IIFE/CJS wrapping) would break before Phase 3 gives files
+  real `import`/`export` boundaries.
+- `.mjs` files (`ajaxQueue/ajaxQueueIndex.mjs`, `audio/index.mjs`,
+  `Startup.mjs`) are real ES modules and stay out of the concatenated bundle
+  — they still load as separate `<script type="module">` tags.
+- [`Load.bundled.js`](../Load.bundled.js) is a counterpart to `Load.js` that
+  loads the two `dist/*.bundle.js` files instead of the long script list, for
+  manual side-by-side testing. `manifest.json`'s `content_scripts` still
+  points at `Load.js` — production/beta are unaffected. To try the bundled
+  path locally, run `npm run build`, then temporarily point
+  `content_scripts[0].js` at `Load.bundled.js` before loading the extension
+  unpacked (`Load.bundled.js` and `dist/*` are already declared in
+  `web_accessible_resources` so this only requires the one-line swap).
+- The `gamelog` and `campaign` page-type script lists aren't bundled (short,
+  mostly reuse files covered by the two bundles above) — `Load.bundled.js`
+  falls back to loading them individually, same as `Load.js`.
+- CI runs `npm run build` as a non-blocking check (same warn-only treatment
+  as lint/format from Phase 0) to catch build breakage early.
+- `Load.bundled.js` has been manually tested unpacked in a real browser (via
+  the `content_scripts[0].js` swap above) and confirmed working. Still
+  recommend a beta-channel pass, per the plan's principle 2, before this
+  bundle is trusted as a swap-in replacement for `Load.js`.
 
 ### Phase 3 — Incremental modularization of the monoliths
 
